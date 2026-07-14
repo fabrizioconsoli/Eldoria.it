@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Le Cronache di Eldoria</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=IM+Fell+English&display=swap" rel="stylesheet">
+
+</head>
+
+
+<body>
+
+
+<canvas id="stars"></canvas>
+
+
+<!-- COPERTINA -->
+
+<div class="cover" id="cover">
+
+<div class="cover-content">
+
+<img src="assets/logo.png" class="logo">
+
+<h1>Le Cronache di Eldoria</h1>
+
+<p>
+Un mondo perduto tra magia,
+antichi regni e segreti dimenticati.
+</p>
+
+<button onclick="openCodex()">
+Apri il Codex
+</button>
+
+</div>
+
+</div>
+
+
+
+<!-- CODEX -->
+
+
+<div class="codex" id="codex">
+
+
+
+<aside>
+
+<h2>📖 Le Cronache di Eldoria</h2>
+
+
+<button onclick="page('home')">
+🏰 Introduzione
+</button>
+
+
+<button onclick="page('world')">
+🌍 Il Mondo
+</button>
+
+
+<button onclick="page('history')">
+📜 Storia
+</button>
+
+
+<button onclick="page('factions')">
+👑 Fazioni
+</button>
+
+
+<button onclick="page('magic')">
+✨ Magia
+</button>
+
+
+<button onclick="page('rules')">
+🎲 Regole
+</button>
+
+
+<hr>
+
+
+<button onclick="toggleTheme()">
+🌙 Tema
+</button>
+
+
+<button onclick="toggleMusic()">
+🎵 Musica
+</button>
+
+
+</aside>
+
+
+
+
+<main>
+
+
+
+<!-- INTRODUZIONE -->
+
+
+<section id="home" class="paper active">
+
+
+<h1>🏰 Benvenuto Erede</h1>
+
+
+<p>
+Questo è il luogo dove scoprirai la lore di Eldoria,
+un mondo segnato dalla caduta degli Dei, dalle guerre antiche
+e dai segreti nascosti nel tempo.
+</p>
+
+
+<hr>
+
+
+<h1>⛴️ Il viaggio verso Eldoria</h1>
+
+
+<p>
+Il rumore dell'acqua accompagna il lento movimento del traghetto.
+La nebbia avvolge il fiume mentre le sponde scompaiono lentamente
+alle vostre spalle.
+</p>
+
+
+<p>
+Davanti a voi iniziano ad apparire le luci di un villaggio nascosto
+tra montagne e foreste antiche.
+</p>
+
+
+<h2>
+Eldoria.
+</h2>
+
+
+<p>
+Un luogo dimenticato dal mondo...
+ma non dalla storia.
+</p>
+
+
+<p>
+Sul ponte del traghetto due viandanti osservano il vostro arrivo.
+</p>
+
+
+<p>
+<b>Viandante Anziano:</b><br>
+"Non molti scelgono questa rotta.
+La maggior parte delle persone fugge da Eldoria... non il contrario."
+</p>
+
+
+<p>
+<b>Giovane Viandante:</b><br>
+"Si dice che una volta fosse un luogo benedetto.
+Un villaggio protetto dagli Dei stessi."
+</p>
+
+
+<p>
+<b>Viandante Anziano:</b><br>
+"Quelli erano altri tempi...
+prima della Frattura."
+</p>
+
+
+<p>
+<b>Giovane Viandante:</b><br>
+"La Frattura Oscura...
+la fazione che ha osato sfidare gli Dei."
+</p>
+
+
+<p>
+<b>Viandante Anziano:</b><br>
+"Non li ha solo sfidati.
+Li ha distrutti."
+</p>
+
+
+<p>
+Con rituali proibiti la Frattura Oscura spezzò il legame
+tra il mondo mortale e le divinità.
+Gli Dei caddero e il mondo rimase senza guida.
+</p>
+
+
+<p>
+<b>Viandante Anziano:</b><br>
+"Gli abitanti di Eldoria aspettano gli
+Eredi della Luce."
+</p>
+
+
+<p>
+Coloro che avranno il coraggio di affrontare la Frattura Oscura,
+scoprire la verità sulla morte degli Dei
+e decidere il destino del mondo.
+</p>
+
+
+<p>
+Il traghetto raggiunge lentamente il molo.
+</p>
+
+
+<h2>
+✨ Benvenuti a Eldoria, Eredi della Luce.
+</h2>
+
+
+</section>
+
+
+
+
+
+<!-- MONDO -->
+
+
+<section id="world" class="paper">
+
+
+<h1>🌍 Il Mondo</h1>
+
+
+<h2>🏰 Eldoria: Il Villaggio tra le Nebbie</h2>
+
+
+<p>
+Nascosta tra immense foreste antiche e montagne avvolte dalla nebbia,
+Eldoria è un piccolo villaggio che un tempo rappresentava il cuore
+della pace e della prosperità.
+</p>
+
+
+<p>
+Le sue mura di pietra furono costruite dagli antichi Custodi,
+protettori delle conoscenze lasciate dagli Dei.
+</p>
+
+
+<p>
+Per secoli Eldoria fu considerata una terra benedetta,
+un luogo dove magia e natura vivevano in equilibrio.
+</p>
+
+
+<hr>
+
+
+<h2>🌿 Un villaggio segnato dalla caduta</h2>
+
+
+<p>
+Dopo la Frattura Oscura tutto cambiò.
+La protezione divina scomparve e antiche creature
+iniziarono a risvegliarsi.
+</p>
+
+
+<p>
+Ora Eldoria è l'ultimo rifugio di coloro che credono
+che la luce possa ancora tornare.
+</p>
+
+
+<hr>
+
+
+<h2>📍 Luoghi importanti</h2>
+
+
+<ul>
+
+<li>
+<b>Piazza dell'Albero Eterno</b><br>
+Il cuore del villaggio, dove cresce un albero millenario
+che conserva una parte dell'antica magia divina.
+</li>
+
+
+<br>
+
+
+<li>
+<b>Torre dei Custodi</b><br>
+Un'antica torre dove venivano studiati i segreti degli Dei.
+</li>
+
+
+<br>
+
+
+<li>
+<b>Santuario delle Stelle Cadute</b><br>
+Un tempio distrutto dove potrebbero essere nascosti
+frammenti del potere divino.
+</li>
+
+
+<br>
+
+
+<li>
+<b>Porto delle Nebbie</b><br>
+Il luogo dove arrivano coloro che cercano risposte.
+</li>
+
+
+</ul>
+
+
+</section>
+<section id="history" class="paper">
+
+
+<h1>📜 La Storia degli Dei</h1>
+
+
+<p>
+Prima della nascita dei regni mortali, il mondo era governato dagli
+Antichi Dei. Essi erano i custodi dell'equilibrio tra magia, vita,
+morte e tempo.
+</p>
+
+
+<p>
+Per migliaia di anni guidarono le civiltà, proteggendo il mondo dalle
+forze del caos. Ma anche gli esseri immortali possono essere consumati
+dal desiderio di potere.
+</p>
+
+
+<hr>
+
+
+<h2>✨ L'Età della Luce Divina</h2>
+
+
+<p>
+Cinque grandi divinità mantennero l'equilibrio del mondo.
+Ognuna possedeva un dominio e un compito.
+</p>
+
+
+<ul>
+
+<li>
+<b>Aurelion - Dio della Luce e della Creazione</b><br>
+Colui che donò speranza ai mortali e difese il confine tra ordine e caos.
+</li>
+
+
+<br>
+
+
+<li>
+<b>Nythera - Dea della Conoscenza e dei Segreti</b><br>
+Custode della magia antica e delle verità dimenticate.
+</li>
+
+
+<br>
+
+
+<li>
+<b>Valthar - Dio della Guerra e del Coraggio</b><br>
+Protettore dei guerrieri e delle promesse mantenute.
+</li>
+
+
+<br>
+
+
+<li>
+<b>Selanna - Dea della Vita e della Natura</b><br>
+Colei che diede vita alle foreste e alle creature del mondo.
+</li>
+
+
+<br>
+
+
+<li>
+<b>Morvane - Dio dell'Ombra e del Passaggio</b><br>
+Custode della morte e dell'equilibrio tra vita e fine.
+</li>
+
+</ul>
+
+
+<hr>
+
+
+<h2>⚔️ Il Primo Tradimento</h2>
+
+
+<p>
+Tra gli Dei nacque una divisione.
+Morvane iniziò a credere che il loro compito fosse un errore.
+</p>
+
+
+<p>
+Secondo lui i mortali erano indegni del dono della creazione:
+ricevevano il potere degli Dei senza comprenderne il valore.
+</p>
+
+
+<p>
+Nel segreto iniziò a cercare un rituale proibito capace di rubare
+la scintilla divina dei suoi fratelli.
+</p>
+
+
+<p>
+Quando gli altri Dei scoprirono il suo piano, lo bandirono nelle
+profondità del mondo.
+</p>
+
+
+<p>
+Prima di scomparire pronunciò una profezia:
+</p>
+
+
+<h3>
+"Il cielo cadrà non per mano dei nemici...
+ma per il tradimento di coloro che chiamate fratelli."
+</h3>
+
+
+<hr>
+
+
+<h2>🌑 La Nascita della Frattura Oscura</h2>
+
+
+<p>
+Secoli dopo apparve una fazione conosciuta come
+<b>La Frattura Oscura</b>.
+</p>
+
+
+<p>
+Essi sostenevano che gli Dei avessero privato i mortali
+della libertà e che il mondo dovesse essere liberato
+dal loro dominio.
+</p>
+
+
+<p>
+Ma la verità era molto più complessa.
+</p>
+
+
+<p>
+Tra le loro fila vi erano guerrieri corrotti,
+antichi sacerdoti e persino creature nate dalla stessa magia divina.
+</p>
+
+
+<hr>
+
+
+<h2>🩸 Il Tradimento di Nythera</h2>
+
+
+<p>
+Durante la guerra contro la Frattura Oscura,
+Nythera scoprì un rituale capace di salvare gli Dei.
+</p>
+
+
+<p>
+Ma il rituale richiedeva che una divinità sacrificasse
+la propria essenza per proteggere le altre.
+</p>
+
+
+<p>
+Temendo di essere scelta come sacrificio,
+Nythera nascose la verità.
+</p>
+
+
+<p>
+In segreto consegnò il rituale alla Frattura Oscura,
+permettendo ai nemici di scoprire il punto debole degli Dei.
+</p>
+
+
+<p>
+Il suo tradimento cambiò per sempre il destino del mondo.
+</p>
+
+
+<hr>
+
+
+<h2>💀 La Caduta degli Dei</h2>
+
+
+<p>
+Durante l'ultima battaglia il cielo sopra Eldoria si spezzò.
+Le stelle si oscurarono e la magia iniziò a morire.
+</p>
+
+
+<p>
+Uno dopo l'altro gli Dei caddero.
+</p>
+
+
+<p>
+Prima della loro fine, Aurelion nascose frammenti della loro essenza
+nel mondo mortale, lasciando una speranza per il futuro.
+</p>
+
+
+<hr>
+
+
+<h2>✨ La Profezia degli Eredi della Luce</h2>
+
+
+<p>
+Quando gli Dei caddero, una nuova generazione sarebbe sorta.
+</p>
+
+
+<p>
+Non scelti dal sangue.
+Non scelti dal destino.
+Ma dalle loro azioni.
+</p>
+
+
+<p>
+Gli Eredi della Luce dovranno scoprire la verità,
+capire chi ha realmente tradito gli Dei
+e decidere se riportare la vecchia era
+o crearne una nuova.
+</p>
+
+
+</section>
+
+
+
+
+
+<section id="factions" class="paper">
+
+
+<h1>👑 Fazioni</h1>
+
+
+<h2>🌑 La Frattura Oscura</h2>
+
+
+<p>
+La fazione responsabile della caduta degli Dei.
+Agisce nell'ombra e cerca i frammenti del potere divino
+per completare il proprio piano.
+</p>
+
+
+<h2>🛡️ Gli Eredi della Luce</h2>
+
+
+<p>
+Guerrieri, studiosi e avventurieri chiamati a combattere
+contro la Frattura Oscura e riportare equilibrio nel mondo.
+</p>
+
+
+<h2>📜 I Custodi Antichi</h2>
+
+
+<p>
+Un ordine dimenticato che protegge antichi testi,
+reliquie e segreti sugli Dei caduti.
+</p>
+
+
+</section>
+
+
+
+
+
+<section id="magic" class="paper">
+
+
+<h1>✨ La Magia</h1>
+
+
+<p>
+La magia nasce dai frammenti lasciati dagli Dei dopo la loro caduta.
+</p>
+
+
+<p>
+Ogni incantesimo utilizza una piccola parte dell'energia
+che un tempo apparteneva alle divinità.
+</p>
+
+
+<p>
+Coloro che usano la magia devono scegliere:
+controllare il potere...
+oppure rischiare di esserne consumati.
+</p>
+
+
+</section>
+
+
+
+
+
+<section id="rules" class="paper">
+
+
+<h1>🎲 Regole della Campagna</h1>
+
+
+<ul>
+
+<li>Livello iniziale: 1</li>
+
+<li>Ambientazione completamente personalizzata</li>
+
+<li>Regole Homebrew attive</li>
+
+<li>Le scelte degli Eredi influenzano la storia</li>
+
+<li>Ogni decisione può cambiare il destino di Eldoria</li>
+
+</ul>
+
+
+</section>
+
+
+
+
+</main>
+
+
+</div>
+
+
+
+<audio id="music" loop>
+
+<source src="music/fantasy.mp3">
+
+</audio>
+
+
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
